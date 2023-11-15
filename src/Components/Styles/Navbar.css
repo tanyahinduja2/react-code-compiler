@@ -2,7 +2,7 @@
     font-size: 28px;
     font-weight: bold;
     margin: 5px 100px 5px 20px;
-    color: #068DA9
+    color: #DB005B
 }
 
 .Navbar {
@@ -12,7 +12,7 @@
     height: 60px;
     width: 100%;
     text-align: center;
-    color: #068DA9;
+    color: #DB005B;
     background-color: #eeeeee;
     gap: 20px;
     /* border-bottom: 3px solid #8d8b8b; */
@@ -24,7 +24,7 @@
 }
 
 .Navbar input {
-    accent-color: #068DA9;
+    accent-color: #DB005B;
 }
 
 #no {
@@ -32,9 +32,9 @@
     width: 120px;
     font-size: 16px;
     color: black;
-    border: 1px solid #068DA9;
+    border: 1px solid #DB005B;
     border-radius: 8px;
-    background-color: #474747;
+    background-color: white;
 }
 
 #no:focus {
@@ -43,15 +43,15 @@
 
 .css-b62m3t-container {
     width: 170px;
-    color: #068DA9;
+    color: #DB005B;
     background-color: #eeeeee;
 }
 
 .css-13cymwt-control {
     background-color: #eeeeee !important;
-    border: 2px solid #068DA9 !important;
+    border: 2px solid #DB005B !important;
 }
 
 .css-1jqq78o-placeholder {
-    color: #068DA9 !important
+    color: #DB005B !important
 }
