@@ -3,6 +3,7 @@ const cors = require("cors");
 const Axios = require("axios");
 const app = express();
 const PORT = 8000;
+const apiKey = process.env.REACT_APP_API_KEY;
 
 app.use(cors());
 app.use(express.json());
@@ -46,7 +47,7 @@ async function executeCode(code, languageId, input) {
     },
     headers: {
       "content-type": "application/json",
-      "X-RapidAPI-Key": "d3e4ee7a9emsha45d05810b4c0f8p1cbe4ejsncb947d65b3e2",
+      "X-RapidAPI-Key": apiKey,
       "X-RapidAPI-Host": "judge0-ce.p.rapidapi.com",
     },
     data: {
@@ -70,7 +71,7 @@ async function executeCode(code, languageId, input) {
       {
         headers: {
           "X-RapidAPI-Key":
-            "d3e4ee7a9emsha45d05810b4c0f8p1cbe4ejsncb947d65b3e2",
+            apiKey,
           "X-RapidAPI-Host": "judge0-ce.p.rapidapi.com",
         },
         params: {
