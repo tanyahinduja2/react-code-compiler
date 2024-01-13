@@ -21,7 +21,7 @@ function App() {
     setLoading(true);
     if (userCode === ``) return;
     Axios.post(
-      "http://localhost:8000/compile",
+      "/compile",
       {
         code: userCode,
         language: userLanguage,
