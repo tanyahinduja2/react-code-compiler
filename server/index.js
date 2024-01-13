@@ -6,8 +6,8 @@ const PORT = 8000;
 const apiKey = process.env.REACT_APP_API_KEY;
 
 const corsOptions = {
-  origin: 'https://code-lab-code-compiler.vercel.app/',
-  method: 'POST',
+  origin: 'https://code-lab-code-compiler.vercel.app',
+  methods: 'POST',
 }
 
 app.use(cors(corsOptions));
