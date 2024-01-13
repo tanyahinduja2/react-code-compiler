@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const Axios = require("axios");
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT;
 const apiKey = process.env.REACT_APP_API_KEY;
 
 const corsOptions = {
