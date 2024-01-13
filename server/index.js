@@ -8,6 +8,7 @@ const apiKey = process.env.REACT_APP_API_KEY;
 const corsOptions = {
   origin: 'https://code-lab-code-compiler.vercel.app',
   methods: ['POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'X-Requested-With'],
 }
 
 app.use(cors(corsOptions));
