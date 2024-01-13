@@ -5,7 +5,12 @@ const app = express();
 const PORT = 8000;
 const apiKey = process.env.REACT_APP_API_KEY;
 
-app.use(cors());
+const corsOptions = {
+  origin: 'https://code-lab-code-compiler.vercel.app/',
+  method: 'POST',
+}
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.post("/compile", async (req, res) => {
@@ -95,7 +100,7 @@ async function executeCode(code, languageId, input) {
   }
 }
 
-app.listen(process.env.PORT || PORT, () => {
-  console.log(`Server listening on port : ${PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server listening on port : ${process.env.PORT}`);
 });
 
