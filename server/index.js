@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.options('/compile', cors(corsOptions));
 
-app.post("/compile", async (req, res) => {
+app.post("/compile", cors(corsOptions), async (req, res) => {
   const code = req.body.code;
   const language = req.body.language;
   const input = req.body.input;
