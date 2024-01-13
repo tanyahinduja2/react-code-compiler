@@ -7,11 +7,13 @@ const apiKey = process.env.REACT_APP_API_KEY;
 
 const corsOptions = {
   origin: 'https://code-lab-code-compiler.vercel.app',
-  methods: 'POST',
+  methods: ['POST', 'OPTIONS'],
 }
 
 app.use(cors(corsOptions));
 app.use(express.json());
+
+app.options('/compile', cors(corsOptions));
 
 app.post("/compile", async (req, res) => {
   const code = req.body.code;
