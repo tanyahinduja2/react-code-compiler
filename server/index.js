@@ -13,7 +13,10 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-app.options('/compile', cors(corsOptions));
+app.options("/compile", cors(corsOptions), (req, res) => {
+  res.sendStatus(200); 
+});
+
 
 app.post("/compile", cors(corsOptions), async (req, res) => {
   const code = req.body.code;
