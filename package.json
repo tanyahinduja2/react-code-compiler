@@ -2,7 +2,7 @@
   "name": "online-code-compiler",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "proxy": "https://code-lab-code-compiler.vercel.app",
   "dependencies": {
     "@monaco-editor/react": "^4.4.6",
     "@testing-library/jest-dom": "^5.16.5",
