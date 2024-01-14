@@ -20,8 +20,7 @@ function App() {
   function Compile() {
     setLoading(true);
     if (userCode === ``) return;
-    Axios.post(
-      "/compile",
+    Axios.post("/compile",
       {
         code: userCode,
         language: userLanguage,
