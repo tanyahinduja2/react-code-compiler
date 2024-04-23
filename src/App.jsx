@@ -98,6 +98,8 @@ function App() {
             console.log("res.data", response.data)
             if (response.data.compile_output) {
               setUserOutput(atob(response.data.compile_output));
+            } else if (response.data.stderr) { 
+              setUserOutput(atob(response.data.stderr)); 
             } else {
               setUserOutput(atob(response.data.stdout));
             }
@@ -105,7 +107,8 @@ function App() {
     } catch(err) {
         console.log(err);
     }
-  }
+}
+
 
   function clearOutput() {
     setUserOutput("");

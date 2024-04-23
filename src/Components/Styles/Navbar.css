@@ -8,14 +8,26 @@
 .Navbar {
     display: flex;
     align-items: center;
-    padding-top: 10px;
+    padding: 10px;
     height: 60px;
     width: 100%;
     text-align: center;
     color: #DB005B;
     background-color: #eeeeee;
-    gap: 20px;
+    gap: 10px;
     /* border-bottom: 3px solid #8d8b8b; */
+}
+
+.leftDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.rightDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 .Navbar label {
@@ -55,3 +67,31 @@
 .css-1jqq78o-placeholder {
     color: #DB005B !important
 }
+
+/* Media queries for tablet */
+@media only screen and (max-width: 1024px) {
+    .title {
+      font-size: 24px;
+      margin: 5px 50px 5px 10px;
+    }
+  
+    .Navbar label {
+      margin-left: 20px;
+    }
+  }
+  
+  /* Media queries for phone */
+  @media only screen and (max-width: 600px) {
+    .title {
+      font-size: 20px;
+      margin: 5px 20px 5px 10px;
+    }
+  
+    .Navbar label {
+      margin-left: 20px;
+    }
+  
+    .Navbar input {
+      margin-left: 20px;
+    }
+  }
